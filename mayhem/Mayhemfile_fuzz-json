@@ -1,0 +1,8 @@
+project: wt
+target: fuzz-json
+cmds:
+  - cmd: /mayhem/fuzz-json
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-json/testsuite

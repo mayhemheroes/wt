@@ -1,0 +1,8 @@
+project: wt
+target: fuzz-uri
+cmds:
+  - cmd: /mayhem/fuzz-uri
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-uri/testsuite
